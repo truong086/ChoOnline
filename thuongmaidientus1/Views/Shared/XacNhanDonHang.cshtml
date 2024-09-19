@@ -1,0 +1,24 @@
+﻿@using thuongmaidientus1.ViewModel;
+@model XulydonhangDTO
+@{
+    
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Template</title>
+</head>
+<body>
+
+    <div style="width: 100%; background-image: url('https://4.bp.blogspot.com/-Tw7GcaZaM8Y/VvAQbOdZi7I/AAAAAAAAAac/ohZQf1brXK8RXynPzMIkthitiVkb654dw/s640/hinh-nen-may-tinh-dep-nhat-05.jpg'); background-size: cover; background-repeat:no-repeat; height: 500px; text-align: center; padding: 60px 0;">
+        <div>
+            <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Xác nhận đơn hàng</h1>
+            <p style="color: red; font-family: Arial; font-weight: bold;">Hello, @Model.account_name</p>
+            <h2>Sản phẩm: @Model.product_name</h2>
+            <h2>Số lượng: @Model.soluong</h2>
+            <h2>Giá: @Model.price</h2>
+            <h2>Tổng tiền: @Model.total</h2>
+            <h2>Trạng thái: @Model.trangthai</h2>
+        </div>
+    </div>
+</body>
